@@ -13,5 +13,5 @@ class URLCreate(BaseModel):
         raise ValueError("Not a valid URL")
 
 
-# class URLCreateResponse(URLCreate):
-#     short_url: str
+class URLList(BaseModel):
+    urls: list[URLCreate]
